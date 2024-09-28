@@ -1,0 +1,331 @@
+/*/*-------------------- CSS RESET ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------- CSS RESET ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global Styles*/
+
+/* Global Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    max-width: 1300px; /* Maximum width for large screens */
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main-content {
+    background-color: white; /* White background for content */
+    color: black; /* Black text inside the content */
+    max-width: 880px; /* Limit the width of the main content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Optional shadow for contrast */
+}
+
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #007d7b;
+    background-color: white;
+    
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Navigation */
+nav.menu {
+    text-align: center;
+    background-color: #000000;
+    padding: 10px;
+}
+
+nav .menu ul {
+    display: inline-block;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav.menu ul li a:hover {
+    color: #00FF00;
+}
+
+/* Main Layout for sections */
+section {
+    margin-bottom: 30px;
+}
+
+p, figcaption, label, input, small {
+    font-size: 1em;
+}
+
+/* Image Gallery */
+figure {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 500px;
+    border: 5px solid white;
+    display: inline-block;
+}
+
+figure figcaption {
+    text-align: center;
+    margin-top: 5px;
+    color: bla;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form input[type="submit"] {
+    background-color: #00FF00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Media Queries */
+
+/* 1 Column Layout for small screens (max-width: 485px) */
+@media (max-width: 485px) {
+    body {
+        max-width: 485px;
+        padding: 10px;
+        background-color: #000000;
+    }
+
+    .main-content {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: white;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    nav.menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.menu ul li {
+        margin: 10px 0;
+    }
+
+    figure img {
+        width: 100%; /* Full width images */
+    }
+}
+
+/* 2 Column Layout for medium screens (max-width: 880px) */
+@media (min-width: 486px) and (max-width: 880px) {
+    body {
+        background-color: black;
+        max-width: 880px;
+        padding: 20px;
+    }
+
+    .main-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    nav.menu ul {
+        justify-content: center; /* Centered navigation links */
+    }
+
+    figure img {
+        width: 48%; /* Two images per row */
+        margin-right: 2%;
+    }
+
+    figure img:nth-child(2n) {
+        margin-right: 0; /* No margin on the second image of each row */
+    }
+}
+
+/* 3 Column Layout for large screens (min-width: 1300px) */
+@media (min-width: 881px) and (max-width: 1300px) {
+    body {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    nav.menu ul {
+        justify-content: flex-end; /* Right align navigation */
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 20px;
+    }
+
+    figure img {
+        width: 100%;
+        margin-right: 0;
+    }
+}
